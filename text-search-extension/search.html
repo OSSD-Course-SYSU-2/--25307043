@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索结果</title>
+  <link rel="stylesheet" href="search.css">
+</head>
+<body>
+  <div class="search-container">
+    <div class="search-header">
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="搜索...">
+        <button id="search-button">搜索</button>
+      </div>
+      <div class="engine-selector">
+        <select id="engine-select">
+          <option value="google">Google</option>
+          <option value="baidu">百度</option>
+          <option value="bing">必应</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="search-results" id="search-results">
+      <div class="loading">加载中...</div>
+    </div>
+  </div>
+
+  <script src="search.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "文本搜索助手",
+  "description": "选中文本后自动在独立窗口中搜索",
+  "version": "1.0.0",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "all_frames": true
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["search.html", "search.js", "search.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
