@@ -1,0 +1,46 @@
+{
+  "name": "text-search-assistant",
+  "version": "2.0.0",
+  "description": "一次开发，多端部署的文本搜索助手 - 基于HarmonyOS算法优化",
+  "author": "CodeArts",
+  "license": "MIT",
+  "platforms": {
+    "browser": {
+      "name": "浏览器扩展",
+      "platforms": ["chrome", "edge", "firefox"],
+      "manifest": "manifest.json",
+      "entry": "content.js",
+      "features": ["popup", "content-script", "background"]
+    },
+    "harmonyos": {
+      "name": "HarmonyOS应用",
+      "platforms": ["harmonyos-next", "openharmony"],
+      "manifest": "app.json5",
+      "entry": "entry/src/main/ets/MainAbility.ts",
+      "features": ["ui", "ability", "data"]
+    },
+    "web": {
+      "name": "Web应用",
+      "platforms": ["web", "pwa"],
+      "manifest": "package.json",
+      "entry": "index.html",
+      "features": ["spa", "pwa", "responsive"]
+    }
+  },
+  "algorithms": {
+    "harmonyos": {
+      "smartPosition": "分布式UI布局算法",
+      "distributedCache": "分布式数据管理",
+      "adaptiveScheduler": "资源自适应调度",
+      "eventOptimization": "事件处理优化",
+      "deviceDetection": "设备检测与适配"
+    }
+  },
+  "features": [
+    "智能窗口定位",
+    "分布式缓存",
+    "性能自适应",
+    "设备检测与适配",
+    "一次开发多端部署"
+  ]
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文本搜索助手</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>文本搜索助手</h1>
+      <p class="subtitle">选中文本自动搜索</p>
+    </div>
+
+    <div class="info-section">
+      <h2>使用说明</h2>
+      <ol class="instructions">
+        <li>在任意网页上用鼠标选中文字</li>
+        <li>搜索窗口会自动弹出显示搜索结果</li>
+        <li>点击 × 按钮或页面其他区域关闭窗口</li>
+      </ol>
+    </div>
+
+    <div class="settings-section">
+      <h2>设置</h2>
+      <div class="setting-item">
+        <label for="search-engine">搜索引擎</label>
+        <select id="search-engine">
+          <option value="google">Google</option>
+          <option value="baidu">百度</option>
+          <option value="bing">必应</option>
+        </select>
+      </div>
+      <div class="setting-item">
+        <label>
+          <input type="checkbox" id="auto-search" checked>
+          启用自动搜索
+        </label>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>版本 1.0.0</p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
